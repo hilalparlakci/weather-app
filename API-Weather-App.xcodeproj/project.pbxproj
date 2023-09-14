@@ -14,6 +14,12 @@
 		22EFCC0E2AB1DFFE00F00FEA /* API_Weather_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFCC0D2AB1DFFE00F00FEA /* API_Weather_AppTests.swift */; };
 		22EFCC182AB1DFFE00F00FEA /* API_Weather_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFCC172AB1DFFE00F00FEA /* API_Weather_AppUITests.swift */; };
 		22EFCC1A2AB1DFFE00F00FEA /* API_Weather_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFCC192AB1DFFE00F00FEA /* API_Weather_AppUITestsLaunchTests.swift */; };
+		22EFCC272AB1E07C00F00FEA /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFCC262AB1E07C00F00FEA /* Forecast.swift */; };
+		22EFCC292AB1E0AC00F00FEA /* ForecastListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFCC282AB1E0AC00F00FEA /* ForecastListViewModel.swift */; };
+		22EFCC2B2AB1E0C800F00FEA /* ForecastViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFCC2A2AB1E0C800F00FEA /* ForecastViewModel .swift */; };
+		22EFCC2D2AB1E0EC00F00FEA /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFCC2C2AB1E0EC00F00FEA /* UIApplication.swift */; };
+		22EFCC2F2AB1E10B00F00FEA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFCC2E2AB1E10B00F00FEA /* APIService.swift */; };
+		22EFCC322AB1E18300F00FEA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 22EFCC312AB1E18300F00FEA /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,11 @@
 		22EFCC132AB1DFFE00F00FEA /* API-Weather-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "API-Weather-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EFCC172AB1DFFE00F00FEA /* API_Weather_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Weather_AppUITests.swift; sourceTree = "<group>"; };
 		22EFCC192AB1DFFE00F00FEA /* API_Weather_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Weather_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22EFCC262AB1E07C00F00FEA /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		22EFCC282AB1E0AC00F00FEA /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
+		22EFCC2A2AB1E0C800F00FEA /* ForecastViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForecastViewModel .swift"; sourceTree = "<group>"; };
+		22EFCC2C2AB1E0EC00F00FEA /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		22EFCC2E2AB1E10B00F00FEA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EFCC322AB1E18300F00FEA /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +108,12 @@
 			children = (
 				22EFCBFC2AB1DFFD00F00FEA /* API_Weather_AppApp.swift */,
 				22EFCBFE2AB1DFFD00F00FEA /* ContentView.swift */,
+				22EFCC262AB1E07C00F00FEA /* Forecast.swift */,
+				22EFCC282AB1E0AC00F00FEA /* ForecastListViewModel.swift */,
+				22EFCC2C2AB1E0EC00F00FEA /* UIApplication.swift */,
+				22EFCC2A2AB1E0C800F00FEA /* ForecastViewModel .swift */,
 				22EFCC002AB1DFFE00F00FEA /* Assets.xcassets */,
+				22EFCC2E2AB1E10B00F00FEA /* APIService.swift */,
 				22EFCC022AB1DFFE00F00FEA /* Preview Content */,
 			);
 			path = "API-Weather-App";
@@ -143,6 +160,9 @@
 			dependencies = (
 			);
 			name = "API-Weather-App";
+			packageProductDependencies = (
+				22EFCC312AB1E18300F00FEA /* SDWebImageSwiftUI */,
+			);
 			productName = "API-Weather-App";
 			productReference = 22EFCBF92AB1DFFD00F00FEA /* API-Weather-App.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 22EFCBF02AB1DFFD00F00FEA;
+			packageReferences = (
+				22EFCC302AB1E18300F00FEA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 22EFCBFA2AB1DFFD00F00FEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EFCC2D2AB1E0EC00F00FEA /* UIApplication.swift in Sources */,
+				22EFCC2F2AB1E10B00F00FEA /* APIService.swift in Sources */,
 				22EFCBFF2AB1DFFD00F00FEA /* ContentView.swift in Sources */,
+				22EFCC292AB1E0AC00F00FEA /* ForecastListViewModel.swift in Sources */,
+				22EFCC272AB1E07C00F00FEA /* Forecast.swift in Sources */,
 				22EFCBFD2AB1DFFD00F00FEA /* API_Weather_AppApp.swift in Sources */,
+				22EFCC2B2AB1E0C800F00FEA /* ForecastViewModel .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +605,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22EFCC302AB1E18300F00FEA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22EFCC312AB1E18300F00FEA /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22EFCC302AB1E18300F00FEA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22EFCBF12AB1DFFD00F00FEA /* Project object */;
 }
